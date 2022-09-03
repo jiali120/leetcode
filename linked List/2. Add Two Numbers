@@ -1,0 +1,77 @@
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ 
+ 
+ 
+ 
+ var addTwoNumbers = function(l1, l2) {
+    
+    let sum = 0;
+    let current = new ListNode(0);
+    let result = current;
+    
+    while(l1 || l2) {
+        
+        if(l1) {
+            sum += l1.val;
+            l1 = l1.next;
+        }
+        
+        if(l2) {
+            sum += l2.val;
+            l2 = l2.next;
+        }
+        
+        current.next = new ListNode(sum % 10);
+        current = current.next;
+        
+        sum = sum > 9 ? 1 : 0;
+    }
+    
+    if(sum) {
+        current.next = new ListNode(sum);
+    }
+    
+    return result.next;
+};
+ */
+var addTwoNumbers = function(l1, l2) {
+    let carry = 0;
+    let previousNode = new ListNode();
+    const headNode = previousNode;
+    while(l1 != null || l2 != null || carry){
+        let val1=0;
+        let val2=0
+        if(l1 != null){
+            //list 1 inside the first value
+            val1=l1.val
+            
+            //update or move to next node. next means Node point
+            l1=l1.next
+            
+        }
+        
+        if(l2 != null){
+            val2=l2.val
+            l2=l2.next
+        }
+        const sum = val1+val2+ carry
+        carry = sum>9?1:0
+        
+        const current = sum%10;
+        const currentNode = new ListNode(current)
+        previousNode.next = currentNode;
+        previousNode = currentNode;
+    }
+    return headNode.next;
+    
+};
