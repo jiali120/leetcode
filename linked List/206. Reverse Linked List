@@ -1,0 +1,36 @@
+
+
+/**
+*206. Reverse Linked List
+
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var reverseList = function(head) {
+    
+    let cur = head;
+    let prev = null;
+    let holdnext = null;
+    
+    while(cur != null){
+        //store pointer: holdnext
+        holdnext=cur.next;
+        //let holdnext go from right to left
+        cur.next = prev;
+        //set prev value to current value
+        prev=cur;
+        
+        //set current to holdnext
+        cur=holdnext;
+        
+          
+          } return prev;
+    
+};
