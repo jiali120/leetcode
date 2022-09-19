@@ -21,6 +21,8 @@
 
 ![Screen Shot 2022-09-19 at 8 54 57 AM](https://user-images.githubusercontent.com/60761935/191022685-23030ffb-13f9-4e02-8d1f-b0aa9f0846c5.png)
 
+## 优先刷 树、链表、二分查找、DFS、BFS 等面试常考类型；
+
 
 # leetcode practice
  
