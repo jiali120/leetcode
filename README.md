@@ -16,6 +16,12 @@
 * 排序：把节点按某种指定的顺序重新排列。例如递增或递减。
 
 
+![Screen Shot 2022-09-19 at 8 53 03 AM](https://user-images.githubusercontent.com/60761935/191022549-84f7ea07-4733-490e-8c63-84193973ac55.png)
+
+
+![Screen Shot 2022-09-19 at 8 54 57 AM](https://user-images.githubusercontent.com/60761935/191022685-23030ffb-13f9-4e02-8d1f-b0aa9f0846c5.png)
+
+
 # leetcode practice
  
  ## Linked List : 
@@ -43,6 +49,8 @@
  
  ## Binary Tree
  * 110 Balanced Binary Tree     https://blog.csdn.net/SpringRolls/article/details/109773550
+ 
+ 
  
 
 
