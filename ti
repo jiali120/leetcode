@@ -1,0 +1,26 @@
+/*s="abcdef"  output="badcfe"
+
+s="abcde" output="badce" */
+
+
+var reverseStr = function(String s) {
+
+  let res="";
+  if(s.length%2 == 0){
+    for(let i=0; i<s.length; i+=2){
+    // charAt() 方法可返回指定位置的字符。
+    res+=s.charAt(i+1);
+    res+=s.charAt(i);
+    }
+    }
+    else{
+      for(let i=0; i<s.length-1; i+=2){
+        res+=s.charAt(i+1);
+        ret+=s.charAt(i);
+      }
+      res+=s.charAt(s.length-1);
+    }
+    return res;
+    }
+    
+};
