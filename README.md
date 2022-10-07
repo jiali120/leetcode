@@ -121,7 +121,7 @@
 * Longest Palindromic Substring
 * Palindromic Substrings
 * Encode and Decode Strings (Leetcode Premium)
-## Tree
+## Tree 
 * Maximum Depth of Binary Tree
 * Same Tree
 * Invert/Flip Binary Tree
@@ -142,5 +142,7 @@
 * Find Median from Data Stream
 
 ### https://www.techinterviewhandbook.org/coding-interview-study-plan/
+
+##### binary search tree: left node smaller than the first node, and right node larger than the first node.
 
 
